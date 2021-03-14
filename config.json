@@ -1,5 +1,5 @@
 {
     "applicationName": "Ichiharu Web Template",
-    "webserverPort": 18600,
+    "webserverPort": 3000,
     "mongodbURL": "mongodb://localhost:27017/"
 }
