@@ -44,6 +44,6 @@ app.get('*', (req, res) => {
     res.render('404', metadata)
 })
 
-server.listen(conf.webserverPort, function (err) {
-    log.debug(`Web server listening on port ${conf.webserverPort}.`)
+app.listen(conf.webserverPort, function (err) {
+    console.log(`Web server listening on port ${conf.webserverPort}.`)
 })
