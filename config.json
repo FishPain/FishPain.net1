@@ -1,5 +1,5 @@
 {
-    "applicationName": "Ichiharu Web Template",
+    "applicationName": "FishPain.net",
     "webserverPort": 3000,
     "mongodbURL": "mongodb://localhost:27017/"
 }
