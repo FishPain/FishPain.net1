@@ -1,1 +1,4 @@
 /* Place your app specific css here. */
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+}

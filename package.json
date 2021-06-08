@@ -1,7 +1,7 @@
 {
   "name": "fishpain.net",
   "version": "1.0.0",
-  "description": "",
+  "description": "This repository contains the template for new Ichiharu apps.\r **Do not disseminate information. Contains closed-sourced code**",
   "main": "app.js",
   "scripts": {
     "start": "node app",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FishPain/FishPain.net"
+    "url": "git+https://github.com/FishPain/FishPain.net.git"
   },
   "author": "FishPain",
   "private": true,
@@ -17,5 +17,10 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/FishPain/FishPain.net/issues"
+  },
+  "devDependencies": {},
+  "license": "ISC"
 }
