@@ -84,3 +84,25 @@ body {
 #scrollDownBtn:hover {
 	animation: bounce 1.5s ease infinite;
 }
+
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #fff; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #03e3fc; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #03c2fc; 
+  }
