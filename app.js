@@ -18,12 +18,12 @@ app.engine('hbs', exphbs({
 app.set('view engine', 'hbs')
 app.set('views', `views`)
 
-
+// Main page
 app.get('/', (req, res) => {
     var metadata = {
         meta: {
-            title: "Home",
-            path: false
+            title: "Portfolio",
+            description : "This is his portfolio",
         },
         nav: {
             index: true
@@ -32,11 +32,11 @@ app.get('/', (req, res) => {
     res.render('index', metadata)
 })
 
+// Error 404
 app.get('*', (req, res) => {
     var metadata = {
         meta: {
             title: "404",
-            path: false
         },
         nav: {}
     }

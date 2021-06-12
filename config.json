@@ -1,5 +1,5 @@
 {
-    "applicationName": "FishPain.net",
+    "applicationName": "FishPain_Website",
     "webserverPort": 80,
     "mongodbURL": "mongodb://localhost:27017/"
 }
