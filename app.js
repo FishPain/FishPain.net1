@@ -36,7 +36,9 @@ app.get('*', (req, res) => {
     var metadata = {
         meta: {
             title: "404",
-            location: req.path,
+            location: ()=>{
+                return (req.path.length <= 20) ? req.path : `${req.path.slice(0,20)}...`
+            },
         },
         nav: {}
     }
