@@ -8,7 +8,6 @@ const app = express()
 
 app.use(express.static(`public`))
 
-
 app.engine('hbs', exphbs({
     defaultLayout: 'main',
     extname: '.hbs',
@@ -23,7 +22,7 @@ app.get('/', (req, res) => {
     var metadata = {
         meta: {
             title: "Portfolio",
-            description : "This is his portfolio",
+            description : "Tony Yu Haotong. I am a student studying Business Intelligence & Analytics (DBA) in Nanyang Polytechnic (NYP)",
         },
         nav: {
             index: true
@@ -37,6 +36,7 @@ app.get('*', (req, res) => {
     var metadata = {
         meta: {
             title: "404",
+            location: req.path,
         },
         nav: {}
     }
