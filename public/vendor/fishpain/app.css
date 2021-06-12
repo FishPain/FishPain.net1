@@ -1,7 +1,8 @@
 /* Place your app specific css here. */
-body {
+html {
     font-family: "IBM Plex Sans", sans-serif;
 }
+
 
 
 @keyframes float {

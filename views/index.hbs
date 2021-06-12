@@ -1,3 +1,4 @@
+{{!-- Landing Section --}}
 <section class="uk-container uk-height-viewport uk-height-viewport uk-flex uk-margin">
     <div class="uk-margin-auto uk-margin-auto-vertical">
         <p class="uk-flex uk-flex-center uk-h1" id="name">
@@ -12,50 +13,62 @@
             <a class="" href="https://github.com/FishPain/" target="blank"><i class="fab fa-github-square fa-3x"></i></a>
         </div>
         <div class="uk-flex uk-flex-center uk-margin-medium-top" id="scrollDown">
-            <a id="scrollDownBtn" data-easing="{{smoothScroll.easing}}" href="#experience" >
+            <a id="scrollDownBtn" data-easing="{{smoothScroll.easing}}" href="#skills" >
                 <span uk-icon="icon: chevron-down; ratio: 3"></span>
             </a>
         </div>
     </div>
 </section>
 
-<section class="uk-container uk-height-viewport uk-flex uk-margin" id="experience" >
+{{!-- Skills --}}
+<section class="uk-container uk-height-viewport uk-flex uk-margin" id="skills" >
     <div class="uk-margin-auto uk-margin-auto-vertical">
         <span class="uk-flex uk-flex-center uk-h1">Familiar With</span>
         <div class="uk-column-1-2@m uk-margin-large-top">
-            <img class="uk-margin-medium-right" src="/static/undraw/undraw_Code_review.svg" alt="Experience">
+            <img class="uk-margin-medium-right" src="/static/undraw/undraw_Code_review.svg" alt="skills">
             <div class="uk-margin-medium-left">
                 <table class="uk-table uk-margin-remove">
-                    <tbody>
+                    <tbody class="">
                         <tr>
                             <td>
                                 <img class="" src="/static/icons/python.png" alt="Python" height="48" width="48">
-                                <span class="uk-margin-medium-left uk-h4">Python 3</span>
+                                <span class="uk-margin-medium-left uk-h5">Python 3</span>
+                            </td>
+                            <td>
+                                <img class="" src="/static/icons/github.png" alt="Git" height="48" width="48">
+                                <span class="uk-margin-medium-left uk-h5">Git, Github</span>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <img class="" src="/static/icons/nodejs.png" alt="Python" height="48" width="48">
-                                <span class="uk-margin-medium-left uk-h4">NodeJS, ExpressJS</span>
+                                <img class="" src="/static/icons/nodejs.png" alt="Nodejs" height="48" width="48">
+                                <span class="uk-margin-medium-left uk-h5">NodeJS, ExpressJS</span>
+                            </td>
+                            <td>
+                                <img class="" src="/static/icons/gitkraken.png" alt="Gitkraken" height="48" width="48">
+                                <span class="uk-margin-medium-left uk-h5">GitKraken</span>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <img class="" src="/static/icons/aws.png" alt="Python" height="48" width="48">
-                                <span class="uk-margin-medium-left uk-h4">AWS, EC2, Route 53</span>
+                                <img class="" src="/static/icons/aws.png" alt="AWS" height="48" width="48">
+                                <span class="uk-margin-medium-left uk-h5">AWS, EC2, Route 53</span>
+                            </td>
+                            <td>
+                                <img class="" src="/static/icons/powerbi.png" alt="Power BI" height="48" width="48">
+                                <span class="uk-margin-medium-left uk-h5">Power BI</span>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <img class="" src="/static/icons/tableau.svg" alt="Tableau" height="48" width="48">
-                                <span class="uk-margin-medium-left uk-h4">Tableau, Tableau Prep</span>
+                                <span class="uk-margin-medium-left uk-h5">Tableau, Tableau Prep</span>
                             </td>
                         </tr>
                     </tbody>
                 </table>
-                    </div>
+            </div>
         </div>
-        
     </div>
 </section>
 
