@@ -3,7 +3,6 @@ body {
     font-family: "IBM Plex Sans", sans-serif;
 }
 
-
 @keyframes float {
 	0% {
 		transform: translatey(0px);
