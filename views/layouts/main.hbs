@@ -12,8 +12,6 @@
     <meta name="description" content="{{meta.description}}">
 
     <script>if (typeof module === 'object') { window.module = module; module = undefined; }; </script>
-    
-    <script src="/vendor/fishpain/init.js"></script>
 
     <!-- First-party libraries -->
     <link rel="stylesheet" href="/vendor/fishpain/app.css">
@@ -28,7 +26,10 @@
     <link rel="stylesheet" href="/vendor/nprogress/nprogress.css">
     <script src="/vendor/nprogress/nprogress.js"></script>
     <script src="/vendor/fishpain/nprogressSetup.js"></script>
-    <script>NProgress.start()</script>
+    <script src="/vendor/fishpain/init.js"></script>
+
+    <!-- Turbolinks -->
+    <script src="/vendor/turbolinks/turbolinks.js"></script>
 
     <!-- UIKIT -->
     <script defer src="/vendor/uikit/navbar.js"></script>
@@ -37,12 +38,13 @@
 
     <!-- Font Awesome -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
-    
     <script>if (window.module) module = window.module;</script>
+
 
 </head>
 
 <body>
     {{{body}}}
+    <script>NProgress.start()</script>
 </body>
 </html>

@@ -15,5 +15,6 @@ $(document).on('turbolinks:load', function () {
 $(document).on('ready', function () {
     $(window).on('load', function () {
         NProgress.done();
+        Turbolinks.start()
     });
 });
