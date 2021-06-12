@@ -8,6 +8,7 @@ const app = express()
 
 app.use(express.static(`public`))
 
+// Handlebars
 app.engine('hbs', exphbs({
     defaultLayout: 'main',
     extname: '.hbs',
@@ -24,8 +25,8 @@ app.get('/', (req, res) => {
             title: "Portfolio",
             description : "Tony Yu Haotong. I am a student studying Business Intelligence & Analytics (DBA) in Nanyang Polytechnic (NYP)",
         },
-        nav: {
-            index: true
+        smoothScroll: {
+            easing: "easeInQuad"
         }
     }
     res.render('index', metadata)
@@ -40,7 +41,7 @@ app.get('*', (req, res) => {
                 return (req.path.length <= 20) ? req.path : `${req.path.slice(0,20)}...`
             },
         },
-        nav: {}
+        smoothScroll: false
     }
     res.status = 404
     res.render('404', metadata)

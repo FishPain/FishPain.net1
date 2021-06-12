@@ -35,15 +35,25 @@
     <script defer src="/vendor/uikit/navbar.js"></script>
     <link rel="stylesheet" href="/vendor/uikit/uikit.min.css">
     <script src="/vendor/uikit/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
 
     <!-- Font Awesome -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
     <script>if (window.module) module = window.module;</script>
 
+    <!-- Smooth Scroll -->
+    <script src="/vendor/smooth-scroll-master/smooth-scroll.polyfills.min.js"></script>
+
 </head>
 
 <body>
     <script>NProgress.start()</script>
+
     {{{body}}}
+
+    {{!-- Smooth Scroll --}}
+    {{#if smoothScroll}}
+    <script> new SmoothScroll('a[href*="#"]', {speed: 1000, speedAsDuration: true});</script>
+    {{/if}}
 </body>
 </html>
