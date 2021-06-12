@@ -17,10 +17,8 @@ body {
 
 
 #errorImg {
-	/* animation: float 3s ease-in-out infinite; */
 	animation-name: float;
-	animation-duration: 3s;
-	animation-fill-mode: ease-in-out;
-	animation-delay: infinite;
-
+	animation-duration: 2.3s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
 }
