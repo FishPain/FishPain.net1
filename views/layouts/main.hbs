@@ -12,21 +12,21 @@
     <meta name="description" content="{{meta.description}}">
 
     <script>if (typeof module === 'object') { window.module = module; module = undefined; }; </script>
+    
+    <!-- JQuery -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
 
     <!-- First-party libraries -->
     <link rel="stylesheet" href="/vendor/fishpain/app.css">
+    <link rel="stylesheet" href="/vendor/fishpain/switch.css">
 
     <!-- Font IBM Plex Sans -->
     <link rel="stylesheet" href="/vendor/font/IBM_PS">
-
-    <!-- JQuery -->
-    <script src="/vendor/jquery/jquery.min.js"></script>
 
     <!-- nprogress -->
     <link rel="stylesheet" href="/vendor/nprogress/nprogress.css">
     <script src="/vendor/nprogress/nprogress.js"></script>
     <script src="/vendor/fishpain/nprogressSetup.js"></script>
-    <script src="/vendor/fishpain/init.js"></script>
 
     <!-- Turbolinks -->
     <script src="/vendor/turbolinks/turbolinks.js"></script>
@@ -55,5 +55,7 @@
     {{#if smoothScroll}}
     <script> new SmoothScroll('a[href*="#"]', {speed: 1000, speedAsDuration: true});</script>
     {{/if}}
+    <script src="/vendor/fishpain/init.js"></script>
+    <script src="/vendor/fishpain/switch.js"></script>
 </body>
 </html>
