@@ -57,6 +57,25 @@ html {
 	100% { transform: scale(1,1)    translateY(0); }
 }
 
+/* width */
+::-webkit-scrollbar {
+width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #03e3fc;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #03a1fc;
+}
 
 
 #name {
@@ -85,6 +104,15 @@ html {
 
 
 #scrollDownBtn:hover {
+	animation: bounce 1.5s ease infinite;
+}
+
+
+#goUpBtn {
+	color: white;
+}
+
+#goUpBtn:hover {
 	animation: bounce 1.5s ease infinite;
 }
 

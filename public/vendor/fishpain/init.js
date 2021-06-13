@@ -4,18 +4,7 @@ console.log("%cBut there's nothing to see here, so go away.\n ヘ(゜Д、゜)�
 console.log("")
 
 
-const setLightMode = () =>{
-    $("#icon").toggleClass("fa-sun")
-    $("html").css("background-color", "white")
-    $("span, p").css("color", "black")
-}
-
-const setDarkMode = () => {
-    $("#icon").toggleClass("fa-moon")
-    $("html").css("background-color", "#181818")
-    $("span, p").css("color", "white")
-}
-
+//Load default theme
 const loadDefaultMode = () =>{
     if(localStorage.getItem('mode') == 'dark'){
         setDarkMode()
@@ -26,3 +15,19 @@ const loadDefaultMode = () =>{
 }
 
 loadDefaultMode()
+
+
+const showGoUpBtn = () => {
+    $(document).scroll(function() {
+        const viewPortHeight = $(window).height()
+        let scrollDistance = $(document).scrollTop()
+        if (scrollDistance > viewPortHeight) {
+            $("#goUpBtn").prop("hidden", false);
+        }
+        else {
+            $("#goUpBtn").prop("hidden", true);
+        }
+    })
+}
+
+showGoUpBtn()

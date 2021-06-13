@@ -1,10 +1,22 @@
+{{!-- Light and dark mode toggle --}}
 <div class="uk-flex uk-flex-right uk-margin-small-top uk-margin-small-right">
     <label class="switch" id="switch">
         <span class="">
-            <i class="far fa-sun" id="icon"></i>
+            <i class="far fa-2x" id="icon"></i>
         </span>
     </label>
 </div>
+
+
+{{!-- go back up --}}
+<section>
+    <div class="uk-position-fixed uk-position-bottom-right uk-overlay">
+        <a id="scrollDownBtn" data-easing="{{smoothScroll.easing}}" href="#switch">
+            <span uk-icon="icon: chevron-up; ratio: 3" class="uk-border-pill uk-background-primary" id="goUpBtn" hidden></span>
+        </a>
+    </div>
+</section>
+
 
 {{!-- Landing Section --}}
 <section class="uk-container uk-height-viewport uk-height-viewport uk-flex uk-margin">
@@ -37,9 +49,9 @@
             <div class="uk-flex uk-flex-center">
                 <img class="uk-width-1-1@m uk-width-1-2" src="/static/undraw/undraw_Code_review.svg" alt="skills">
             </div>
-            <div class="">
+            <div>
                 <table class="uk-table uk-margin-remove">
-                    <tbody class="">
+                    <tbody>
                         <tr>
                             <td class="uk-text-left@s uk-text-right">
                                 <img class="" src="/static/icons/python.png" alt="Python" height="48" width="48">
@@ -82,4 +94,3 @@
         </div>
     </div>
 </section>
-
