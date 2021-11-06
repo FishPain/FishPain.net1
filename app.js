@@ -8,6 +8,8 @@ const app = express()
 
 app.use(express.static(`public`))
 
+const PORT = process.env.PORT || 3000;
+
 // Handlebars
 app.engine('hbs', exphbs({
     defaultLayout: 'main',
@@ -47,6 +49,6 @@ app.get('*', (req, res) => {
     res.render('404', metadata)
 })
 
-app.listen(conf.webserverPort, function (err) {
+app.listen(PORT, function (err) {
     console.log(`Web server listening on port ${conf.webserverPort}.`)
 })
