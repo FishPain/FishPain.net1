@@ -4,7 +4,7 @@
   "description": "This repository contains the template for new Ichiharu apps.\r **Do not disseminate information. Contains closed-sourced code**",
   "main": "app.js",
   "scripts": {
-    "start": "node app",
+    "start": "sudo nodemon app",
     "test": "nodemon app"
   },
   "repository": {
