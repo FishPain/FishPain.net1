@@ -1,6 +1,3 @@
-// Config File
-const conf = require('./config.json')
-
 // Express related modules
 const express = require('express')
 const exphbs = require('express-handlebars')
@@ -50,5 +47,5 @@ app.get('*', (req, res) => {
 })
 
 app.listen(PORT, function (err) {
-    console.log(`Web server listening on port ${conf.webserverPort}.`)
+    console.log(`Web server listening on port ${PORT}.`)
 })
