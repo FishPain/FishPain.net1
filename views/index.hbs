@@ -1,24 +1,3 @@
-{{!-- Top Navbar --}}
-<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" id="topNav">
-    <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
-        <div class="uk-navbar-center">
-            <ul class="uk-navbar-nav">
-                <li class="uk-active">
-                    <a id="homeNav" data-easing="{{smoothScroll.easing}}" href="#home">Home</a>
-                </li>
-                <li>
-                    <a id="aboutNav" data-easing="{{smoothScroll.easing}}" href="#about">About</a>
-                </li>
-                <li>
-                    <a id="projectsNav" data-easing="{{smoothScroll.easing}}" href="#projects">Projects</a>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
-</div>
-
-
 {{!-- Light and dark mode toggle --}}
 {{!-- Temp Hidden this feature cos i lazy code this--}}
 <div class="uk-hidden">
@@ -41,6 +20,25 @@
     </div>
 </section>
 
+{{!-- Top Navbar --}}
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" id="topNav">
+    <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+        <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active">
+                    <a id="homeNav" data-easing="{{smoothScroll.easing}}" href="#home">Home</a>
+                </li>
+                <li>
+                    <a id="aboutNav" data-easing="{{smoothScroll.easing}}" href="#about">About</a>
+                </li>
+                <li>
+                    <a id="projectsNav" data-easing="{{smoothScroll.easing}}" href="#projects">Projects</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</div>
 
 
 {{!-- Landing Section --}}
@@ -49,14 +47,15 @@
         <p class="uk-flex uk-flex-center uk-h1" id="name">
             Tony Yu Haotong
         </p>
-        <p class="uk-flex uk-flex-center uk-h4" id="content">
-            Student studying Business Intelligence & Analytics at Nanyang Polytechnic (Singapore)
-        </p>
+        <div class="uk-flex uk-flex-center uk-h4" id="content">
+            <p>Student studying Business Intelligence & Analytics at Nanyang Polytechnic (Singapore)</p>
+        </div>
 
         <div class="uk-flex uk-flex-center" id="socials" uk-grid>
-            <a class="" href="mailto:yuhaotong03@gmail.com" target="blank"><i class="fas fa-envelope fa-3x"></i></a>
-            <a class="" href="https://www.linkedin.com/in/tony-yu-haotong-981149173/" target="blank"><i class="fab fa-linkedin fa-3x"></i></a>
-            <a class="" href="https://github.com/FishPain/" target="blank"><i class="fab fa-github-square fa-3x"></i></a>
+            <a class="" href="mailto:yuhaotong03@gmail.com" target="_blank"><i class="fas fa-envelope fa-3x"></i></a>
+            <a class="" href="https://www.linkedin.com/in/yuht" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+            <a class="" href="https://github.com/FishPain/" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+            <a class="" href="https://drive.google.com/file/d/1Oog_axDWAYjTU6CL0Ae4M2Gkq27M8gXk/view?usp=sharing" target="_blank"><i class="fas fa-file-pdf fa-3x"></i></a>
         </div>
 
         <div class="uk-flex uk-flex-center uk-margin-medium-top" id="scrollDown">
@@ -68,71 +67,95 @@
 </section>
 
 
-{{!-- Skills --}}
-<section class="uk-container uk-height-viewport uk-flex uk-margin" id="about" >
+{{!-- About --}}
+<section class="uk-container uk-height-viewport uk-flex uk-margin" id="about">
     <div class="uk-margin-auto uk-margin-auto-vertical">
-        <span class="uk-flex uk-flex-center uk-h1">Familiar With</span>
-        <div class="uk-column-1-2@m uk-column-1-1 uk-margin-large-top">
-            <div class="uk-flex uk-flex-center">
-                <img class="uk-width-1-1@m uk-width-1-2" src="/static/undraw/undraw_Code_review.svg" alt="skills">
-            </div>
-            <div>
-                <table class="uk-table uk-margin-remove">
-                    <tbody>
-                        <tr>
-                            <td class="uk-text-left@s uk-text-right">
-                                <img class="" src="/static/icons/python.png" alt="Python" height="48" width="48">
-                                <span class="uk-margin-medium-left uk-h5 uk-visible@s">Python 3</span>
-                            </td>
-                            <td class="uk-text-left">
-                                <img class="" src="/static/icons/github.png" alt="Git" height="48" width="48">
-                                <span class="uk-margin-medium-left uk-h5 uk-visible@s">Git, Github</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-left@s uk-text-right">
-                                <img class="" src="/static/icons/nodejs.png" alt="Nodejs" height="48" width="48">
-                                <span class="uk-margin-medium-left uk-h5 uk-visible@s">NodeJS, ExpressJS</span>
-                            </td>
-                            <td class="uk-text-left">
-                                <img class="" src="/static/icons/gitkraken.png" alt="Gitkraken" height="48" width="48">
-                                <span class="uk-margin-medium-left uk-h5 uk-visible@s">GitKraken</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-left@s uk-text-right">
-                                <img class="" src="/static/icons/aws.png" alt="AWS" height="48" width="48">
-                                <span class="uk-margin-medium-left uk-h5 uk-visible@s">AWS, EC2, Route 53</span>
-                            </td>
-                            <td class="uk-text-left"> 
-                                <img class="" src="/static/icons/powerbi.png" alt="Power BI" height="48" width="48">
-                                <span class="uk-margin-medium-left uk-h5 uk-visible@s">Power BI</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-left@s uk-text-right">
-                                <img class="" src="/static/icons/tableau.svg" alt="Tableau" height="48" width="48">
-                                <span class="uk-margin-medium-left uk-h5 uk-visible@s">Tableau, Tableau Prep</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <span class="uk-flex uk-flex-center uk-h1">About Me</span>
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+                <img class="" data-src="/static/myPhoto/myPhoto.jpeg" alt="" uk-img>
+                <div class="uk-margin uk-margin-top uk-h4">
+                    <p>
+                        I am Tony Yu Haotong. Born in Liaoning China  and currently studying in Singapore.
+                        <br><br>
+                        I would describe myself as a curious person who is not afraid of learning, trying, and failing.
+                        <br><br>
+                        Often times, I find myself exploring new things and knowledge. From Programming languages, IoT, Cloud Computing, and Machine Learning, to Crocheting, Baking, and Cycling.
+                        <br><br>
+                        My experience working in <a href="https://www.nyp.edu.sg/student-life/makerspace.html" target="_blank">Makerspace@NYP</a> has also developed and pushed me as a leader. It taught me how to lead a team, as well as, critical thinking, and decision making skills. While working there, I was often tasked to plan, host, coordinate, and manage events and workshops for students from Secondary Schools to Tertiary Institution.
+                    </p>
+                </div>
         </div>
     </div>
 </section>
 
+
+{{!-- Skills --}}
+{{!-- <section class="uk-container uk-height-viewport uk-flex uk-margin" id="about">
+<div class="uk-margin-auto uk-margin-auto-vertical">
+    <span class="uk-flex uk-flex-center uk-h1">Familiar With</span>
+    <div class="uk-column-1-2@m uk-column-1-1 uk-margin-large-top">
+        <div class="uk-flex uk-flex-center">
+            <img class="uk-width-1-1@m uk-width-1-2" src="/static/undraw/undraw_Code_review.svg" alt="skills">
+        </div>
+        <div>
+            <table class="uk-table uk-margin-remove">
+                <tbody>
+                    <tr>
+                        <td class="uk-text-left@s uk-text-right">
+                            <img class="" src="/static/icons/python.png" alt="Python" height="48" width="48">
+                            <span class="uk-margin-medium-left uk-h5 uk-visible@s">Python 3</span>
+                        </td>
+                        <td class="uk-text-left">
+                            <img class="" src="/static/icons/github.png" alt="Git" height="48" width="48">
+                            <span class="uk-margin-medium-left uk-h5 uk-visible@s">Git, Github</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="uk-text-left@s uk-text-right">
+                            <img class="" src="/static/icons/nodejs.png" alt="Nodejs" height="48" width="48">
+                            <span class="uk-margin-medium-left uk-h5 uk-visible@s">NodeJS, ExpressJS</span>
+                        </td>
+                        <td class="uk-text-left">
+                            <img class="" src="/static/icons/gitkraken.png" alt="Gitkraken" height="48" width="48">
+                            <span class="uk-margin-medium-left uk-h5 uk-visible@s">GitKraken</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="uk-text-left@s uk-text-right">
+                            <img class="" src="/static/icons/aws.png" alt="AWS" height="48" width="48">
+                            <span class="uk-margin-medium-left uk-h5 uk-visible@s">AWS, EC2, Route 53</span>
+                        </td>
+                        <td class="uk-text-left"> 
+                            <img class="" src="/static/icons/powerbi.png" alt="Power BI" height="48" width="48">
+                            <span class="uk-margin-medium-left uk-h5 uk-visible@s">Power BI</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="uk-text-left@s uk-text-right">
+                            <img class="" src="/static/icons/tableau.svg" alt="Tableau" height="48" width="48">
+                            <span class="uk-margin-medium-left uk-h5 uk-visible@s">Tableau, Tableau Prep</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</section> --}}
+
+
+{{!-- Projects --}}
 <section id="projects" class="uk-container uk-height-viewport uk-height-viewport uk-flex uk-margin">
     <div class="uk-margin-auto uk-margin-auto-vertical">
         <span class="uk-flex uk-flex-center uk-h1">Projects</span>
 
-        <div class="uk-column-1-3@m uk-column-1-1 uk-margin-large-top">
-
-            <div class="uk-card uk-card-default">
+        <div class="uk-column-1-3@s uk-column-1-1 uk-margin-large-top">
+            <div class="uk-margin uk-card uk-card-default">
                 <div class="uk-card-header">
+                    <div class="uk-card-badge uk-label">Badge</div>
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                         <div class="uk-width-auto">
-                            <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
+                            <img class="uk-border-circle" width="40" height="40" src="/static/myPhoto/myPhoto.jpeg">
                         </div>
                         <div class="uk-width-expand">
                             <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
@@ -148,11 +171,12 @@
                 </div>
             </div>
 
-            <div class="uk-card uk-card-default uk-margin-large-top">
+            <div class="uk-margin uk-card uk-card-default">
                 <div class="uk-card-header">
+                    <div class="uk-card-badge uk-label">Badge</div>
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                         <div class="uk-width-auto">
-                            <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
+                            <img class="uk-border-circle" width="40" height="40" src="/static/myPhoto/myPhoto.jpeg">
                         </div>
                         <div class="uk-width-expand">
                             <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
@@ -167,11 +191,12 @@
                     <a href="#" class="uk-button uk-button-text">Read more</a>
                 </div>
             </div>
-            <div class="uk-card uk-card-default uk-margin-large-top">
+            <div class="uk-margin uk-card uk-card-default">
                 <div class="uk-card-header">
+                    <div class="uk-card-badge uk-label">Badge</div>                    
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                         <div class="uk-width-auto">
-                            <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
+                            <img class="uk-border-circle" width="40" height="40" src="/static/myPhoto/myPhoto.jpeg">
                         </div>
                         <div class="uk-width-expand">
                             <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
