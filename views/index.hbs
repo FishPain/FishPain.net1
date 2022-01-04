@@ -26,13 +26,13 @@
         <div class="uk-navbar-center">
             <ul class="uk-navbar-nav">
                 <li class="uk-active">
-                    <a id="homeNav" data-easing="{{smoothScroll.easing}}" href="#home">Home</a>
+                    <a id="homeNav" data-easing="{{smoothScroll.easing}}" href="#topNav">Home</a>
                 </li>
                 <li>
                     <a id="aboutNav" data-easing="{{smoothScroll.easing}}" href="#about">About</a>
                 </li>
                 <li>
-                    <a id="skillsNav" data-easing="{{smoothScroll.easing}}" href="#skills">Skills</a>
+                    <a id="skillsNav" data-easing="{{smoothScroll.easing}}" href="#skills">Skills & Experiences</a>
                 </li>
                 <li>
                     <a id="projectsNav" data-easing="{{smoothScroll.easing}}" href="#projects">Projects</a>
@@ -45,8 +45,8 @@
 
 
 {{!-- Landing Section --}}
-<section id="home" class="uk-container uk-height-viewport uk-height-viewport uk-flex uk-margin">
-    <div class="uk-margin-auto uk-margin-auto-vertical">
+<section id="home" class="uk-container uk-height-viewport uk-flex uk-margin">
+    <div class="uk-margin-auto uk-margin-large-top">
         <p class="uk-flex uk-flex-center uk-h1" id="name">
             Tony Yu Haotong
         </p>
@@ -73,7 +73,7 @@
 {{!-- About --}}
 <section class="uk-container uk-height-viewport uk-flex uk-margin" id="about">
     <div class="uk-margin-auto uk-margin-auto-vertical">
-        <span class="uk-flex uk-flex-center uk-h1">About Me</span>
+        <span class="uk-flex uk-flex-center uk-h1 uk-margin uk-margin-medium-bottom">About Me</span>
         <div class="uk-child-width-expand@s uk-text-center" uk-grid>
                 <img class="" data-src="/static/myPhoto/myPhoto.jpeg" alt="" uk-img>
                 <div class="uk-margin uk-margin-top uk-h4">
@@ -92,8 +92,10 @@
 </section>
 
 
+
+
 {{!-- Skills --}}
-{{!-- <section class="uk-container uk-height-viewport uk-flex uk-margin" id="about">
+{{!-- <section class="uk-container uk-height-viewport uk-flex uk-margin" id="skills">
 <div class="uk-margin-auto uk-margin-auto-vertical">
     <span class="uk-flex uk-flex-center uk-h1">Familiar With</span>
     <div class="uk-column-1-2@m uk-column-1-1 uk-margin-large-top">
@@ -147,12 +149,180 @@
 </section> --}}
 
 
-
-<section id="projects" class="uk-container uk-height-viewport uk-height-viewport uk-flex uk-margin">
+<section id="skills" class="uk-container uk-height-viewport uk-flex uk-margin uk-margin-xlarge-top">
     <div class="uk-margin-auto uk-margin-auto-vertical">
-        <span class="uk-flex uk-flex-center uk-h1">Projects</span>
+        <span class="uk-flex uk-flex-center uk-h1 uk-margin uk-margin-medium-bottom">Skills & Experiences</span>
         <div class="uk-child-width-1-3@m uk-grid-medium uk-grid-match" uk-grid>
 
+            <div>
+                <div class="uk-card uk-card-large uk-card-default">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-expand">
+                                <h3 class="uk-card-title uk-margin-remove-bottom">Experiences</h3>
+                            </div>
+                            <div class="uk-width-auto">
+                                <i class="fas fa-briefcase fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card-body">
+
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-left">
+                                    <span class="uk-badge"><span uk-icon="bookmark"></span></span>
+                                </div>
+                                <div class="timeline-content">
+                                    <span class="uk-h4">
+                                        Senior Student Assistant Coach
+                                        <p class="uk-text-meta">
+                                            <a href="" class="">Makerspace@NYP</a>
+                                            <br>
+                                            <time>Nov 2020 - Present</time>
+                                            <br><br>
+                                            <a href="" class="uk-text-meta uk-margin-remove uk-text-primary">View Details</a>
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-left">
+                                    <span class="uk-badge"><span uk-icon="bookmark"></span></span>
+                                </div>
+                                <div class="timeline-content">
+                                    <span class="uk-h4">
+                                        Senior Student Assistant Coach
+                                        <p class="uk-text-meta">
+                                            <a href="" class="">Makerspace@NYP</a>
+                                            <br>
+                                            <time>Nov 2020 - Present</time>
+                                            <br><br>
+                                            <a href="" class="uk-text-meta uk-margin-remove uk-text-primary">View Details</a>
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-large uk-card-default">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-expand">
+                                <h3 class="uk-card-title uk-margin-remove-bottom">Education</h3>
+                            </div>
+                            <div class="uk-width-auto">
+                                <i class="fas fa-graduation-cap fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card-body">
+
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-left">
+                                    <span class="uk-badge"><span uk-icon="bookmark"></span></span>
+                                </div>
+                                <div class="timeline-content">
+                                    <span class="uk-h4">
+                                        Senior Student Assistant Coach
+                                        <p class="uk-text-meta">
+                                            <a href="" class="">Makerspace@NYP</a>
+                                            <br>
+                                            <time>Nov 2020 - Present</time>
+                                            <br><br>
+                                            <a href="" class="uk-text-meta uk-margin-remove uk-text-primary">View Details</a>
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-left">
+                                    <span class="uk-badge"><span uk-icon="bookmark"></span></span>
+                                </div>
+                                <div class="timeline-content">
+                                    <span class="uk-h4">
+                                        Senior Student Assistant Coach
+                                        <p class="uk-text-meta">
+                                            <a href="" class="">Makerspace@NYP</a>
+                                            <br>
+                                            <time>Nov 2020 - Present</time>
+                                            <br><br>
+                                            <a href="" class="uk-text-meta uk-margin-remove uk-text-primary">View Details</a>
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-large uk-card-default">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-expand">
+                                <h3 class="uk-card-title uk-margin-remove-bottom">Skills</h3>
+                            </div>
+                            <div class="uk-width-auto">
+                                <i class="fas fa-tools fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card-body">
+
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-left">
+                                    <span class="uk-badge"><span uk-icon="bookmark"></span></span>
+                                </div>
+                                <div class="timeline-content">
+                                    <span class="uk-h4">
+                                        Senior Student Assistant Coach
+                                        <p class="uk-text-meta">
+                                            <a href="" class="">Makerspace@NYP</a>
+                                            <br>
+                                            <time>Nov 2020 - Present</time>
+                                            <br><br>
+                                            <a href="" class="uk-text-meta uk-margin-remove uk-text-primary">View Details</a>
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-left">
+                                    <span class="uk-badge"><span uk-icon="bookmark"></span></span>
+                                </div>
+                                <div class="timeline-content">
+                                    <span class="uk-h4">
+                                        Senior Student Assistant Coach
+                                        <p class="uk-text-meta">
+                                            <a href="" class="">Makerspace@NYP</a>
+                                            <br>
+                                            <time>Nov 2020 - Present</time>
+                                            <br><br>
+                                            <a href="" class="uk-text-meta uk-margin-remove uk-text-primary">View Details</a>
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="projects" class="uk-container uk-height-viewport uk-flex uk-margin uk-margin-xlarge-top">
+    <div class="uk-margin-auto uk-margin-auto-vertical">
+        <span class="uk-flex uk-flex-center uk-h1 uk-margin uk-margin-medium-bottom">Projects</span>
+        <div class="uk-child-width-1-3@m uk-grid-medium uk-grid-match" uk-grid>
             <div>
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-header">
@@ -288,4 +458,6 @@
         </div>
     </div>
 </section>
+
+
 
