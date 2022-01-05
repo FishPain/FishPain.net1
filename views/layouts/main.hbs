@@ -50,12 +50,37 @@
 <body>
     <script>NProgress.start()</script>
 
+    {{!-- Top Navbar --}}
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" id="topNav">
+        <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active">
+                        <a id="homeNav" data-easing="{{smoothScroll.easing}}" href="#topNav">Home</a>
+                    </li>
+                    <li>
+                        <a id="aboutNav" data-easing="{{smoothScroll.easing}}" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a id="skillsNav" data-easing="{{smoothScroll.easing}}" href="#skills">Skills & Experiences</a>
+                    </li>
+                    <li>
+                        <a id="projectsNav" data-easing="{{smoothScroll.easing}}" href="#projects">Projects</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+
     {{{body}}}
 
     {{!-- Smooth Scroll --}}
     {{#if smoothScroll}}
     <script> new SmoothScroll('a[href*="#"]', {speed: 1000, speedAsDuration: true});</script>
     {{/if}}
+
+
     <script src="/vendor/fishpain/switch.js"></script>
     <script src="/vendor/fishpain/init.js"></script>
 </body>
