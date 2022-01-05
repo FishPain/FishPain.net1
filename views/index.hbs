@@ -50,11 +50,11 @@
 {{!-- About --}}
 <section class="uk-container uk-height-viewport uk-flex uk-margin" id="about">
     <div class="uk-margin-auto uk-margin-auto-vertical">
-        <span class="uk-flex uk-flex-center uk-h1 uk-margin uk-margin-medium-bottom">About Me</span>
+        <span class="uk-flex uk-flex-center uk-h1 uk-margin uk-margin-medium-bottom uk-text-bold">About Me</span>
         <div class="uk-child-width-expand@s uk-text-center" uk-grid>
                 <img class="" data-src="/static/myPhoto/myPhoto.jpeg" alt="" uk-img>
                 <div class="uk-margin uk-margin-top uk-h4">
-                    <p>
+                    <p class="uk-text-left">
                         I am Tony Yu Haotong. Born in Liaoning China  and currently studying in Singapore.
                         <br><br>
                         I would describe myself as a curious person who is not afraid of learning, trying, and failing.
@@ -68,70 +68,15 @@
     </div>
 </section>
 
-
-
-
-{{!-- Skills --}}
-{{!-- <section class="uk-container uk-height-viewport uk-flex uk-margin" id="skills">
-<div class="uk-margin-auto uk-margin-auto-vertical">
-    <span class="uk-flex uk-flex-center uk-h1">Familiar With</span>
-    <div class="uk-column-1-2@m uk-column-1-1 uk-margin-large-top">
-        <div class="uk-flex uk-flex-center">
-            <img class="uk-width-1-1@m uk-width-1-2" src="/static/undraw/undraw_Code_review.svg" alt="skills">
-        </div>
-        <div>
-            <table class="uk-table uk-margin-remove">
-                <tbody>
-                    <tr>
-                        <td class="uk-text-left@s uk-text-right">
-                            <img class="" src="/static/icons/python.png" alt="Python" height="48" width="48">
-                            <span class="uk-margin-medium-left uk-h5 uk-visible@s">Python 3</span>
-                        </td>
-                        <td class="uk-text-left">
-                            <img class="" src="/static/icons/github.png" alt="Git" height="48" width="48">
-                            <span class="uk-margin-medium-left uk-h5 uk-visible@s">Git, Github</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="uk-text-left@s uk-text-right">
-                            <img class="" src="/static/icons/nodejs.png" alt="Nodejs" height="48" width="48">
-                            <span class="uk-margin-medium-left uk-h5 uk-visible@s">NodeJS, ExpressJS</span>
-                        </td>
-                        <td class="uk-text-left">
-                            <img class="" src="/static/icons/gitkraken.png" alt="Gitkraken" height="48" width="48">
-                            <span class="uk-margin-medium-left uk-h5 uk-visible@s">GitKraken</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="uk-text-left@s uk-text-right">
-                            <img class="" src="/static/icons/aws.png" alt="AWS" height="48" width="48">
-                            <span class="uk-margin-medium-left uk-h5 uk-visible@s">AWS, EC2, Route 53</span>
-                        </td>
-                        <td class="uk-text-left"> 
-                            <img class="" src="/static/icons/powerbi.png" alt="Power BI" height="48" width="48">
-                            <span class="uk-margin-medium-left uk-h5 uk-visible@s">Power BI</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="uk-text-left@s uk-text-right">
-                            <img class="" src="/static/icons/tableau.svg" alt="Tableau" height="48" width="48">
-                            <span class="uk-margin-medium-left uk-h5 uk-visible@s">Tableau, Tableau Prep</span>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
-</section> --}}
-
-
-<section id="skills" class="uk-container uk-height-viewport uk-flex uk-margin uk-margin-xlarge-top">
+    
+{{!-- Skills & Experiences--}}
+<section id="skillsExperience" class="uk-container uk-height-viewport uk-flex uk-margin uk-margin-xlarge-top">
     <div class="uk-margin-auto uk-margin-auto-vertical">
-        <span class="uk-flex uk-flex-center uk-h1 uk-margin uk-margin-medium-bottom">Skills & Experiences</span>
+        <span class="uk-flex uk-flex-center uk-h1 uk-margin uk-margin-medium-bottom uk-text-bold">Skills & Experiences</span>
         <div class="uk-child-width-1-3@m uk-grid-medium uk-grid-match" uk-grid>
 
-            <div>
+            {{!-- Experiences --}}
+            <div id="experiences">
                 <div class="uk-card uk-card-large uk-card-default">
                     <div class="uk-card-header">
                         <div class="uk-grid-small uk-flex-middle" uk-grid>
@@ -144,7 +89,6 @@
                         </div>
                     </div>
                     <div class="uk-card-body">
-
                         <div class="timeline">
                             <div class="timeline-item">
                                 <div class="timeline-left">
@@ -154,14 +98,35 @@
                                     <span class="uk-h4">
                                         Senior Student Assistant Coach
                                         <p class="uk-text-meta">
-                                            <a href="" class="">Makerspace@NYP</a>
+                                            <a href="https://www.nyp.edu.sg/student-life/makerspace.html" target="_blank">Makerspace@NYP</a>
                                             <br>
                                             <time>Nov 2020 - Present</time>
                                             <br><br>
-                                            <a href="" class="uk-text-meta uk-margin-remove uk-text-primary">View Details</a>
+                                            <a href="" class="uk-text-meta uk-margin-remove uk-text-primary" uk-toggle="target: #experienceModal_1">View Details</a>
                                         </p>
                                     </span>
                                 </div>
+
+                                {{!-- Modal --}}
+                                <div id="experienceModal_1" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                        <h2 class="uk-modal-title">Senior Student Assistant Coach</h2>
+                                        <span class="uk-text-meta">Makerspace@NYP</span>
+                                        <div>
+                                            <span>As the President, I was tasked to:</span>
+                                            <ul>
+                                                <li>Lead and manage the EXCO committee</li>
+                                                <li>Work with EXCO to develop and implement initiatives that will improve the overall operation and effectiveness of the MakerSpace and MakersNode</li>
+                                                <li>Serves as a spokesperson for the SAC</li>
+                                                <li>Lead and manage Outreach Programmes</li>
+                                                <li>Enforce internal discipline and track performance of SAC</li>
+                                                <li>Plan and conduct recruitment of new SAC</li>
+                                            </ul>
+                                        </div>
+                                   </div>
+                                </div>
+
                             </div>
                             <div class="timeline-item">
                                 <div class="timeline-left">
@@ -169,22 +134,36 @@
                                 </div>
                                 <div class="timeline-content">
                                     <span class="uk-h4">
-                                        Senior Student Assistant Coach
+                                        Math Tutor
                                         <p class="uk-text-meta">
-                                            <a href="" class="">Makerspace@NYP</a>
+                                            <a href="#skillsExperience" class="">Self Employed</a>
                                             <br>
-                                            <time>Nov 2020 - Present</time>
+                                            <time>Sept 2020 - Nov 2020</time>
                                             <br><br>
-                                            <a href="" class="uk-text-meta uk-margin-remove uk-text-primary">View Details</a>
+                                            <a href="" class="uk-text-meta uk-margin-remove uk-text-primary" uk-toggle="target: #experienceModal_2">View Details</a>
                                         </p>
                                     </span>
+                                </div>
+
+                                {{!-- Modal --}}
+                                <div id="experienceModal_2" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                        <h2 class="uk-modal-title">Math Tutor</h2>
+                                        <span class="uk-text-meta">Self Employed</span>
+                                        <div>
+                                            <span>Taught Primary and Secondary School E-Math</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
+
+            {{!-- Educations --}}
+            <div id="educations">
                 <div class="uk-card uk-card-large uk-card-default">
                     <div class="uk-card-header">
                         <div class="uk-grid-small uk-flex-middle" uk-grid>
@@ -211,10 +190,20 @@
                                             <br>
                                             <time>Nov 2020 - Present</time>
                                             <br><br>
-                                            <a href="" class="uk-text-meta uk-margin-remove uk-text-primary">View Details</a>
+                                            <a href="" class="uk-text-meta uk-margin-remove uk-text-primary" uk-toggle="target: #educationModal_1">View Details</a>
                                         </p>
                                     </span>
                                 </div>
+
+                                {{!-- Modal --}}
+                                <div id="educationModal_1" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                        <h2 class="uk-modal-title">Default</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="timeline-item">
                                 <div class="timeline-left">
@@ -228,16 +217,27 @@
                                             <br>
                                             <time>Nov 2020 - Present</time>
                                             <br><br>
-                                            <a href="" class="uk-text-meta uk-margin-remove uk-text-primary">View Details</a>
+                                            <a href="" class="uk-text-meta uk-margin-remove uk-text-primary" uk-toggle="target: #educationModal_2">View Details</a>
                                         </p>
                                     </span>
+                                </div>
+
+                                {{!-- Modal --}}
+                                <div id="educationModal_2" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                        <h2 class="uk-modal-title">Default</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
+
+            {{!-- Skills --}}
+            <div id="skills">
                 <div class="uk-card uk-card-large uk-card-default">
                     <div class="uk-card-header">
                         <div class="uk-grid-small uk-flex-middle" uk-grid>
@@ -245,7 +245,7 @@
                                 <h3 class="uk-card-title uk-margin-remove-bottom">Skills</h3>
                             </div>
                             <div class="uk-width-auto">
-                                <i class="fas fa-tools fa-2x"></i>
+                                <i class="fas fa-graduation-cap fa-2x"></i>
                             </div>
                         </div>
                     </div>
@@ -264,10 +264,20 @@
                                             <br>
                                             <time>Nov 2020 - Present</time>
                                             <br><br>
-                                            <a href="" class="uk-text-meta uk-margin-remove uk-text-primary">View Details</a>
+                                            <a href="" class="uk-text-meta uk-margin-remove uk-text-primary" uk-toggle="target: #educationModal_1">View Details</a>
                                         </p>
                                     </span>
                                 </div>
+
+                                {{!-- Modal --}}
+                                <div id="educationModal_1" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                        <h2 class="uk-modal-title">Default</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="timeline-item">
                                 <div class="timeline-left">
@@ -281,9 +291,18 @@
                                             <br>
                                             <time>Nov 2020 - Present</time>
                                             <br><br>
-                                            <a href="" class="uk-text-meta uk-margin-remove uk-text-primary">View Details</a>
+                                            <a href="" class="uk-text-meta uk-margin-remove uk-text-primary" uk-toggle="target: #educationModal_2">View Details</a>
                                         </p>
                                     </span>
+                                </div>
+
+                                {{!-- Modal --}}
+                                <div id="educationModal_2" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                        <h2 class="uk-modal-title">Default</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -295,10 +314,10 @@
 </section>
 
 
-
+{{!-- Projects --}}
 <section id="projects" class="uk-container uk-height-viewport uk-flex uk-margin uk-margin-xlarge-top">
     <div class="uk-margin-auto uk-margin-auto-vertical">
-        <span class="uk-flex uk-flex-center uk-h1 uk-margin uk-margin-medium-bottom">Projects</span>
+        <span class="uk-flex uk-flex-center uk-h1 uk-margin uk-margin-medium-bottom uk-text-bold">Projects</span>
         <div class="uk-child-width-1-3@m uk-grid-medium uk-grid-match" uk-grid>
             <div>
                 <div class="uk-card uk-card-default">
@@ -431,7 +450,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
