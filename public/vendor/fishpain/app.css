@@ -116,3 +116,7 @@ background: #03a1fc;
 	animation: bounce 1.5s ease infinite;
 }
 
+
+#skills dl dt {
+	font-size:1.1em;
+}

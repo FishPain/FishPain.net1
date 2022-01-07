@@ -31,12 +31,20 @@
             <p>Student studying Business Intelligence & Analytics at Nanyang Polytechnic (Singapore)</p>
         </div>
 
-        <div class="uk-flex uk-flex-center" id="socials" uk-grid>
-            <a class="" href="mailto:yuhaotong03@gmail.com" target="_blank"><i class="fas fa-envelope fa-3x"></i></a>
-            <a class="" href="https://www.linkedin.com/in/yuht" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
-            <a class="" href="https://github.com/FishPain/" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
-            <a class="" href="https://drive.google.com/file/d/11D-yHP792Vkx2UIQ-JWGL--Aww8N7Fc4/view?usp=sharing" target="_blank"><i class="fas fa-file-pdf fa-3x"></i></a>
+        <div class="uk-flex uk-flex-column" id="socials" uk-grid>
+            <div class="uk-flex uk-flex-center" uk-grid>
+                <a class="" href="mailto:yuhaotong03@gmail.com" target="_blank"><i class="fas fa-envelope fa-3x"></i></a>
+                <a class="" href="https://www.linkedin.com/in/yuht" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+                <a class="" href="https://github.com/FishPain/" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+            </div>
+
+            <div class="uk-flex uk-flex-center">
+                <a class="uk-button uk-button-default uk-button-large uk-button-primary" target="_blank" href="https://drive.google.com/file/d/1fStjvkrB8ytdT37ifABn-1Haao3xNihH/view?usp=sharing">
+                    <span class="uk-text-uppercase">Download My Resume</span>
+                </a>
+            </div>
         </div>
+
 
         <div class="uk-flex uk-flex-center uk-margin-medium-top" id="scrollDown">
             <a id="scrollDownBtn" data-easing="{{smoothScroll.easing}}" href="#about" >
@@ -68,12 +76,83 @@
     </div>
 </section>
 
-    
-{{!-- Skills & Experiences--}}
-<section id="skillsExperience" class="uk-container uk-height-viewport uk-flex uk-margin uk-margin-xlarge-top">
+
+
+{{!-- Skills --}}
+<section class="uk-container uk-height-viewport uk-flex uk-margin" id="skills">
     <div class="uk-margin-auto uk-margin-auto-vertical">
-        <span class="uk-flex uk-flex-center uk-h1 uk-margin uk-margin-medium-bottom uk-text-bold">Skills & Experiences</span>
-        <div class="uk-child-width-1-3@m uk-grid-medium uk-grid-match" uk-grid>
+        <span class="uk-flex uk-flex-center uk-h1 uk-margin uk-margin-medium-bottom uk-text-bold">Skills</span>
+        <div class="uk-child-width-1-2@m uk-grid-medium uk-grid-match" uk-grid>
+            <dl class="uk-description-list uk-description-list-divider">
+                <dt>
+                    Data Analytics
+                </dt>
+                <dd>
+                    <i class="fas fa-table uk-text-primary uk-margin-small-right fa-2x"></i>
+                </dd>
+                <dd>
+                    Familiar with data mining and analytics tools such as: Tableau, pySpark,
+                    beautifulSoup etc.
+                </dd>
+                <dt>
+                    Web Development
+                </dt>
+                <dd>
+                    <i class="fab fa-aws uk-text-primary uk-margin-small-right fa-2x"></i>
+                    <i class="fab fa-github uk-text-primary uk-margin-small-right fa-2x"></i>
+                    <i class="fab fa-node uk-text-primary uk-margin-small-right fa-2x"></i>
+                <dd>
+                    Familiar with DevOps process and tools such as: AWS, Git, NodeJs etc.
+                </dd>
+                <dt>Machine Learning</dt>
+                <dd>
+                    <i class="fab fa-python uk-text-primary uk-margin-small-right fa-2x"></i>
+                </dd>
+                <dd>
+                    Familiar with Machine Learning techniques and tools such as: Tensorflow,
+                    NLP etc.
+                </dd>
+                <dt>Languages I speak</dt>
+                <dd>
+                    <i class="fab fa-python uk-text-primary uk-margin-small-right fa-2x"></i>
+                    <i class="fab fa-js-square uk-text-primary uk-margin-small-right fa-2x"></i>
+                    <i class="fas fa-database uk-text-primary uk-margin-small-right fa-2x"></i>
+                    <i class="fab fa-html5 uk-text-primary uk-margin-small-right fa-2x"></i>
+                    <i class="fab fa-css3-alt uk-text-primary uk-margin-small-right fa-2x"></i>
+                </dd>
+                <dd>
+                    Familiar with languages such as: Python, JavaScript, HTML, CSS, mySQL.
+                </dd>
+            </dl>
+            <dl class="uk-description-list uk-description-list-divider">
+                <dt>Leadership</dt>
+                <dd>
+                    Led and managed my EXCO committee to develop and implement
+                    initiatives that will improve the overall operation and effectiveness of the
+                    MakerSpace and MakersNode.
+                </dd>
+                <dt>Organisation</dt>
+                <dd>
+                    Planned and managed workshops for various secondary
+                    schools.
+                </dd>
+                <dt>Presentation</dt>
+                <dd>
+                    Taught many workshops for various secondary
+                    schools, as well as students and lecturers from Nanyang Polytechnic.
+                </dd>
+            </dl>
+        </div>
+    </div>
+</section>
+
+
+
+{{!-- Experiences--}}
+<section class="uk-container uk-height-viewport uk-flex uk-margin uk-margin-xlarge-top" id="experiences" >
+    <div class="uk-margin-auto uk-margin-auto-vertical">
+        <span class="uk-flex uk-flex-center uk-h1 uk-margin uk-margin-medium-bottom uk-text-bold">Experiences</span>
+        <div class="uk-child-width-1-2@m uk-grid-medium uk-grid-match" uk-grid>
 
             {{!-- Experiences --}}
             <div id="experiences">
@@ -168,7 +247,7 @@
                     <div class="uk-card-header">
                         <div class="uk-grid-small uk-flex-middle" uk-grid>
                             <div class="uk-width-expand">
-                                <h3 class="uk-card-title uk-margin-remove-bottom">Education</h3>
+                                <h3 class="uk-card-title uk-margin-remove-bottom">Educations</h3>
                             </div>
                             <div class="uk-width-auto">
                                 <i class="fas fa-graduation-cap fa-2x"></i>
@@ -222,24 +301,6 @@
                     </div>
                 </div>
             </div>
-
-            {{!-- Skills --}}
-            <div id="skills">
-                <div class="uk-card uk-card-large uk-card-default">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <div class="uk-width-expand">
-                                <h3 class="uk-card-title uk-margin-remove-bottom">Skills</h3>
-                            </div>
-                            <div class="uk-width-auto">
-                                <i class="fas fa-graduation-cap fa-2x"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -253,21 +314,22 @@
             <div>
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-grid-small uk-flex-middle " uk-grid>
                             <div class="uk-width-auto">
                                 <img class="uk-border-circle" width="40" height="40" src="/static/myPhoto/myPhoto.jpeg">
                             </div>
                             <div class="uk-width-expand">
                                 <h3 class="uk-card-title uk-margin-remove-bottom">SAC Attendance System </h3>
-                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">Jan 2021 - June 2021</time></p>
                             </div>
                         </div>
                     </div>
                     <div class="uk-card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>A web interface that captures SAC's attendance, authenticates the information and logs it into Airtable (Database).</p>
+                        <p>Technology Used: NodeJs, HBS, Airtable</p>
                     </div>
                     <div class="uk-card-footer">
-                        <a href="#" class="uk-button uk-button-text">Read more</a>
+                        <a href="https://github.com/XinYang-YXY/sacAttendance" target="_blank" class="uk-button uk-button-text">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -281,15 +343,16 @@
                             </div>
                             <div class="uk-width-expand">
                                 <h3 class="uk-card-title uk-margin-remove-bottom">Ctrl C&V Macro Pad</h3>
-                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">Oct 2021 - Dec 2021</time></p>
                             </div>
                         </div>
                     </div>
                     <div class="uk-card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>A Macro Pad made for Programmers. Contains 3 Keys: (Copy, Paste, Open StackOverflow)</p>
+                        <p>Technology used: Arduino Micro, C++</p>
                     </div>
                     <div class="uk-card-footer">
-                        <a href="#" class="uk-button uk-button-text">Read more</a>
+                        <a href="" class="uk-button uk-button-text">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -303,15 +366,18 @@
                             </div>
                             <div class="uk-width-expand">
                                 <h3 class="uk-card-title uk-margin-remove-bottom">EmoScript</h3>
-                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">May 2021 - Present</time></p>
                             </div>
                         </div>
                     </div>
                     <div class="uk-card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>A new programming language that allows you to code in emojis. 😅 </p>
+                        <p>I explored programming language design, C and C++ through this project.</p>
+                        <p>Technology used: C, C++</p>
+
                     </div>
                     <div class="uk-card-footer">
-                        <a href="#" class="uk-button uk-button-text">Read more</a>
+                        <a href="https://github.com/FishPain/Emoscript" target="_blank" class="uk-button uk-button-text">Learn more</a>
                     </div>
                 </div>
             </div>
