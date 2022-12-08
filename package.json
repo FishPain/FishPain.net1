@@ -15,7 +15,7 @@
   "private": true,
   "homepage": "https://fishpain.net",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-handlebars": "^5.2.0"
   },
   "bugs": {
